@@ -24,26 +24,17 @@ app.use(logger)
 app.use(express.urlencoded({ extended: false }))
 app.use(express.json());
 app.use(express.static(path.join(__dirname, '/public')))
+app.use('/subdir',express.static(path.join(__dirname, '/public')))
 
-app.get('/', (req, res) => {
-  // res.sendFile('./views/index.html', {root: __dirname})
-  res.sendFile(path.join(__dirname, 'views', 'index.html'))
-})
-
-app.get('/newpage(.html)?', (req, res) => {
-  res.sendFile(path.join(__dirname, 'views', 'newpage.html'))
-})
-
-app.get('/oldpage(.html)?', (req, res) => {
-  res.status(301).redirect('/newpage');
-})
+app.use('/', require('./routes/root'))
+app.use('/subdir', require('./routes/subdir'))
+app.use('/employees', require('./routes/api/employees'))
 
 app.all('*', (req, res) => {
   res.status(404)
   if(req.accepts('html')){
     res.sendFile(path.join(__dirname, 'views', '404.html'))
-  }
-  if(req.accepts('json')){
+  }else if(req.accepts('json')){
     res.json({error: '404 Not Found'})
   }else{
     res.type('txt').send("404 Not Found")
@@ -51,7 +42,6 @@ app.all('*', (req, res) => {
 })
 
 //Handling errors
-
 app.use(errorHandler)
 
 app.listen(PORT, () => {
