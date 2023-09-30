@@ -1,0 +1,17 @@
+20230930	16:48:19	 54fd0047-6a49-469a-97e9-e29802ced8c0	GET	undefined	/
+20230930	16:48:22	 a2e8e8c0-b4d2-4777-b2db-1e5800680109	GET	undefined	/
+20230930	16:50:35	 2cbf4fb7-2ae2-4cee-b8cb-51f434000908	GET	undefined	/
+20230930	16:50:35	 b6b5cd14-3f96-4259-89a7-996172b6d3fb	GET	undefined	/css/style.css
+20230930	16:55:13	 5189300e-5411-4aab-a78a-654adba70349	GET	http://127.0.0.1:5500	/
+20230930	16:57:39	 f905211f-eff0-4460-b3a7-5a9451782668	GET	https://www.guiatrabalhista.com.br	/
+20230930	16:58:07	 aab8eda4-5693-4eda-acb8-4c6573018891	GET	https://www.guiatrabalhista.com.br	/
+20230930	17:18:12	 6e65985f-7809-4815-81f8-56b3aa4cd147	GET	https://www.google.com	/
+20230930	17:21:37	 8dc1a88e-f349-475b-91bf-773fca69cac7	GET	https://www.google.com	/
+20230930	17:23:47	 b6a6e19d-73bd-40dd-946d-067085f8272f	GET	https://www.google.com	/
+20230930	17:26:41	 5fe7cc5c-d1ce-4a63-9d88-d5bdfdf2e59f	GET	https://www.google.com	/
+20230930	17:27:38	 9f9aa488-ddc1-4fa5-961f-1be0f8c7bbb7	GET	undefined	/
+20230930	17:27:38	 42180928-a760-4034-979e-a76ed88c1e4f	GET	undefined	/css/style.css
+20230930	17:33:04	 08f8d32b-b71d-4278-a96d-b3a34a13b9ee	GET	undefined	/
+20230930	17:33:04	 443eda7a-a3b1-45ca-8065-369eb390b48f	GET	undefined	/css/style.css
+20230930	17:38:57	 1984e518-9ebb-4f82-b89b-02e3297f930b	GET	undefined	/dlkaf
+20230930	17:39:15	 3be6df59-0281-437f-ac10-93c05207ccac	GET	https://www.google.com	/fdfd

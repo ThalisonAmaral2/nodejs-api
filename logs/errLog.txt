@@ -1,0 +1,1 @@
+20230930	17:32:58	 7ff05a61-5cc0-4b81-9417-f00ee8e4ba1e	Error : Not allowed by CORS
