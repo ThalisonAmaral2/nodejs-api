@@ -1,3 +1,4 @@
 20230930	17:32:58	 7ff05a61-5cc0-4b81-9417-f00ee8e4ba1e	Error : Not allowed by CORS
 20231003	11:44:21	 a349b1ea-1a97-4729-aece-c20482ac0505	TypeError : pool.query is not a function
 20231003	12:16:17	 9724d365-63ca-4661-9401-2116be49c7f5	ReferenceError : email_input is not defined
+20231003	13:45:35	 18fb67d8-4d96-4d95-b023-8342bb23580c	ReferenceError : id is not defined

@@ -5,6 +5,8 @@ const userController = require('../../controllers/userController')
 router.route('/')
   .get(userController.getAllUsers)
   .post(userController.createUser)
+  .put(userController.updateUser)
+  .delete(userController.deleteUser)
 
 router.route('/:id')
   .get(userController.getUserById)

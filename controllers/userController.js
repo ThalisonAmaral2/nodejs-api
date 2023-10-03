@@ -58,9 +58,45 @@ const createUser = (req, res) => {
   })
 }
 
+const updateUser = (req, res) => {
+  const {firstname, lastname, email, password, location, dept, age, id} = req.body
+  const query = `UPDATE users 
+  SET 
+    first_name= COALESCE(?,first_name),
+    last_name=COALESCE(?,last_name),
+    email=COALESCE(?,email),
+    password=COALESCE(?,password),
+    location=COALESCE(?,location),
+    dept=COALESCE(?,dept),
+    age=COALESCE(?,age)
+  WHERE 
+    id=?;`;
+  pool.query(query, [firstname, lastname, email, password, location, dept, age, id], err => {
+    if(err){
+      return res.status(500).json({error: "Database error trying to udpate"})
+    }
+    return res.json({msg: "User updated!!!"})
+  })
+}
+
+const deleteUser = (req, res) => {
+  const {id} = req.body
+  const query = "DELETE FROM users WHERE id=?;"
+  console.log(id)
+  pool.query(query, [id], err => {
+    if(err){
+      console.error(err);
+      return res.status(500).json({error: "Database error: Cannot delete", err})
+    }else{
+      return res.json({message: "User deleted!"})
+    }
+  })
+}
 
 module.exports = {
   getUserById,
   getAllUsers,
-  createUser
+  createUser,
+  updateUser,
+  deleteUser
 };
