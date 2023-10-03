@@ -21,6 +21,7 @@ app.use('/subdir',express.static(path.join(__dirname, '/public')))
 app.use('/', require('./routes/root'))
 app.use('/subdir', require('./routes/subdir'))
 app.use('/employees', require('./routes/api/employees'))
+app.use('/users', require('./routes/api/users'))
 
 app.all('*', (req, res) => {
   res.status(404)
